@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python-數字]]></title>
+    <url>%2F2018%2F12%2F26%2Fpython-%E6%95%B8%E5%AD%97%2F</url>
+    <content type="text"><![CDATA[組成python支援 整數 與 浮點數 運算整數與浮點數可以用下列的數學運算子來進行運算 運算子 說明 範例 結果 + 加法 1+1 2 - 減法 2-1 1 * 乘法 3*5 15 / 浮點數除法 9/4 2.25 // 整數除法(小數點捨去) 9//4 2 % 模數(取餘數) 9%4 1 ** 乘冪 2**3 8 類型轉換整數要將其他python資料類型轉換成整數，可以使用int() 布林轉整數1234&gt;&gt;&gt; int(True)1&gt;&gt;&gt; int(False)0 浮點數轉整數1234&gt;&gt;&gt; int(3.14159)3&gt;&gt;&gt; int(1.0e4)10000 數字字串轉整數1234&gt;&gt;&gt; int(&apos;123&apos;)123&gt;&gt;&gt; int(&apos;-23&apos;)-23 int()無法處理含有小數點或指數的字串12345678&gt;&gt;&gt; int(&apos;3.14159&apos;)Traceback (most recent call last): File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;ValueError: invalid literal for int() with base 10: &apos;3.14159&apos;&gt;&gt;&gt; int(&apos;1.0e4&apos;)Traceback (most recent call last): File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;ValueError: invalid literal for int() with base 10: &apos;1.0e4&apos; 浮點數要將其他python資料類型轉換成浮點數，可以使用float() 布林轉浮點數1234&gt;&gt;&gt; float(True)1.0&gt;&gt;&gt; float(False)0.0 整數轉浮點數12&gt;&gt;&gt; float(3)3.0 數字字串轉整數1234&gt;&gt;&gt; float(&apos;123&apos;)123.0&gt;&gt;&gt; float(&apos;-1.5&apos;)-1.5]]></content>
+      <categories>
+        <category>程式</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python-變數與資料類型]]></title>
+    <url>%2F2018%2F12%2F26%2Fpython-%E8%AE%8A%E6%95%B8%E8%88%87%E8%B3%87%E6%96%99%E9%A1%9E%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[資料類型python的基礎資料類型 布林(True與False) 整數(例如100) 浮點數(例如 3.14159) 字串(一串文字字元) 變數 在python中，所有東西都是用 物件 來實作的。(包含布林、整數、浮點數、字串，甚至大型的資料結構、函式與程式) 變數只是名稱，賦值只是指派一個名稱給含有該資料的物件而已123&gt;&gt;&gt; a = 7&gt;&gt;&gt; a7 查看某個物件的資料類型使用type(物件)12345678&gt;&gt;&gt; type(a)&lt;class &apos;int&apos;&gt;&gt;&gt;&gt; type(True)&lt;class &apos;bool&apos;&gt;&gt;&gt;&gt; type(3.14159)&lt;class &apos;float&apos;&gt;&gt;&gt;&gt; type(&apos;hello&apos;)&lt;class &apos;str&apos;&gt;]]></content>
+      <categories>
+        <category>程式</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python-安裝與執行]]></title>
     <url>%2F2018%2F12%2F26%2Fpython-%E5%AE%89%E8%A3%9D%E8%88%87%E5%9F%B7%E8%A1%8C%2F</url>
     <content type="text"><![CDATA[安裝至官網下載安裝檔安裝，建議安裝python3 安裝時，記得勾選將python安裝目錄加入path環境變數 安裝完成後，可以下列指令檢查是否成功安裝12$ python -VPython 3.7.2 執行互動式解譯器在命令列輸入python，使用互動式解譯器來執行小型python程式，這個方式提供一個互動式介面，讓你可以一行一行輸入程式，並馬上看到程式結果。12345$ pythonPython 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit(Intel)] on win32Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.&gt;&gt;&gt; 文字檔將程式存在文字檔，通常文字檔使用副檔名.py，使用python加檔案來執行1$ python hello-world.py]]></content>
