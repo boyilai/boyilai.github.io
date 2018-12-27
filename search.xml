@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python-字串]]></title>
+    <url>%2F2018%2F12%2F27%2Fpython-%E5%AD%97%E4%B8%B2%2F</url>
+    <content type="text"><![CDATA[用str()來轉換資料類型1234&gt;&gt;&gt; str(3.14159)&apos;3.14159&apos;&gt;&gt;&gt; str(True)&apos;True&apos; 用 + 來結合12&gt;&gt;&gt; &apos;hello &apos; + &apos;world&apos;&apos;hello world&apos; 用 * 來複製12&gt;&gt;&gt; &apos;Na &apos; * 4&apos;Na Na Na Na &apos; 用[]來擷取字元12345&gt;&gt;&gt; str = &apos;abcdefg&apos;&gt;&gt;&gt; str[0]&apos;a&apos;&gt;&gt;&gt; str[3]&apos;d&apos; 用[開始：結束：間隔]擷取子字串 [:] 擷取整個序列 [start:] 擷取從start到結束 [:end] 擷取從開始到end前一個 123&gt;&gt;&gt; str = &apos;abcdefg&apos;&gt;&gt;&gt; str[:3]&apos;abc&apos; [start:end] 擷取從start到end前一個 [start:end:step] 擷取從start到end前一個，跳過step字元123&gt;&gt;&gt; str = &apos;abcdefg&apos;&gt;&gt;&gt; str[::2]&apos;aceg&apos; 用len()來取得長度123&gt;&gt;&gt; str = &apos;abcdefg&apos;&gt;&gt;&gt; len(str)7 用split()來分割split()函式用來分割字串為串列，使用時要給分隔符號字元 字串.split(分隔符號) 123&gt;&gt;&gt; str = &apos;a,b,c,d,e,f,g&apos;&gt;&gt;&gt; str.split(&apos;,&apos;)[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;, &apos;f&apos;, &apos;g&apos;] 用join()來結合join()函式用來結合串列為一個字串 字串.join(串列) 字串做為串列結合時的連結字元 123&gt;&gt;&gt; str = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;, &apos;f&apos;, &apos;g&apos;]&gt;&gt;&gt; &apos;,&apos;.join(str)&apos;a,b,c,d,e,f,g&apos; 用replace()來替換 字串.replace(被替換字串,替換字串) 123&gt;&gt;&gt; str = &apos;hello world&apos;&gt;&gt;&gt; str.replace(&apos;hello&apos;,&apos;hi&apos;)&apos;hi world&apos;]]></content>
+      <categories>
+        <category>程式</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python-數字]]></title>
     <url>%2F2018%2F12%2F26%2Fpython-%E6%95%B8%E5%AD%97%2F</url>
     <content type="text"><![CDATA[組成python支援 整數 與 浮點數 運算整數與浮點數可以用下列的數學運算子來進行運算 運算子 說明 範例 結果 + 加法 1+1 2 - 減法 2-1 1 * 乘法 3*5 15 / 浮點數除法 9/4 2.25 // 整數除法(小數點捨去) 9//4 2 % 模數(取餘數) 9%4 1 ** 乘冪 2**3 8 類型轉換整數要將其他python資料類型轉換成整數，可以使用int() 布林轉整數1234&gt;&gt;&gt; int(True)1&gt;&gt;&gt; int(False)0 浮點數轉整數1234&gt;&gt;&gt; int(3.14159)3&gt;&gt;&gt; int(1.0e4)10000 數字字串轉整數1234&gt;&gt;&gt; int(&apos;123&apos;)123&gt;&gt;&gt; int(&apos;-23&apos;)-23 int()無法處理含有小數點或指數的字串12345678&gt;&gt;&gt; int(&apos;3.14159&apos;)Traceback (most recent call last): File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;ValueError: invalid literal for int() with base 10: &apos;3.14159&apos;&gt;&gt;&gt; int(&apos;1.0e4&apos;)Traceback (most recent call last): File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;ValueError: invalid literal for int() with base 10: &apos;1.0e4&apos; 浮點數要將其他python資料類型轉換成浮點數，可以使用float() 布林轉浮點數1234&gt;&gt;&gt; float(True)1.0&gt;&gt;&gt; float(False)0.0 整數轉浮點數12&gt;&gt;&gt; float(3)3.0 數字字串轉整數1234&gt;&gt;&gt; float(&apos;123&apos;)123.0&gt;&gt;&gt; float(&apos;-1.5&apos;)-1.5]]></content>
