@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Govendor使用方法]]></title>
+    <url>%2F2019%2F01%2F08%2FGovendor%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[安裝govendor1go get -u -v github.com/kardianos/govendor 生成vendor專案完成後，可以使用下列指令生成vendor目錄，並在該目錄生成vendor.json，作用類似node.js的package.json，記錄專案所使用的套件及版本。12cd projectgovendor init 加入專案所使用的套件將專案所使用的套件及版本資訊加入vendor.json之中，並將所使用到的套件下載一份至vendor目錄中。1govendor add +e 在.gitignore中加入以下內容，為了避免將vendor目錄中的套件上傳至git儲存庫佔空間。.gitignore12/vendor/*!/vendor/vendor.json 拉取依賴套件到vendor其他人從git下載專案後，便可以利用vendor.json重新安裝專案所需套件到vendor。1govendor sync]]></content>
+      <categories>
+        <category>程式</category>
+      </categories>
+      <tags>
+        <tag>go</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python-字串]]></title>
     <url>%2F2018%2F12%2F27%2Fpython-%E5%AD%97%E4%B8%B2%2F</url>
     <content type="text"><![CDATA[用str()來轉換資料類型1234&gt;&gt;&gt; str(3.14159)&apos;3.14159&apos;&gt;&gt;&gt; str(True)&apos;True&apos; 用 + 來結合12&gt;&gt;&gt; &apos;hello &apos; + &apos;world&apos;&apos;hello world&apos; 用 * 來複製12&gt;&gt;&gt; &apos;Na &apos; * 4&apos;Na Na Na Na &apos; 用[]來擷取字元12345&gt;&gt;&gt; str = &apos;abcdefg&apos;&gt;&gt;&gt; str[0]&apos;a&apos;&gt;&gt;&gt; str[3]&apos;d&apos; 用[開始：結束：間隔]擷取子字串 [:] 擷取整個序列 [start:] 擷取從start到結束 [:end] 擷取從開始到end前一個 123&gt;&gt;&gt; str = &apos;abcdefg&apos;&gt;&gt;&gt; str[:3]&apos;abc&apos; [start:end] 擷取從start到end前一個 [start:end:step] 擷取從start到end前一個，跳過step字元123&gt;&gt;&gt; str = &apos;abcdefg&apos;&gt;&gt;&gt; str[::2]&apos;aceg&apos; 用len()來取得長度123&gt;&gt;&gt; str = &apos;abcdefg&apos;&gt;&gt;&gt; len(str)7 用split()來分割split()函式用來分割字串為串列，使用時要給分隔符號字元 字串.split(分隔符號) 123&gt;&gt;&gt; str = &apos;a,b,c,d,e,f,g&apos;&gt;&gt;&gt; str.split(&apos;,&apos;)[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;, &apos;f&apos;, &apos;g&apos;] 用join()來結合join()函式用來結合串列為一個字串 字串.join(串列) 字串做為串列結合時的連結字元 123&gt;&gt;&gt; str = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;, &apos;f&apos;, &apos;g&apos;]&gt;&gt;&gt; &apos;,&apos;.join(str)&apos;a,b,c,d,e,f,g&apos; 用replace()來替換 字串.replace(被替換字串,替換字串) 123&gt;&gt;&gt; str = &apos;hello world&apos;&gt;&gt;&gt; str.replace(&apos;hello&apos;,&apos;hi&apos;)&apos;hi world&apos;]]></content>
