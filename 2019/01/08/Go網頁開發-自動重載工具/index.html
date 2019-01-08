@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="go,">
+  <meta name="keywords" content="golang,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="安裝govendor1go get -u -v github.com/kardianos/govendor 生成vendor專案完成後，可以使用下列指令生成vendor目錄，並在該目錄生成vendor.json，作用類似node.js的package.json，記錄專案所使用的套件及版本。12cd projectgovendor init 加入專案所使用的套件">
-<meta name="keywords" content="go">
+<meta name="description" content="使用go進行網頁開發時，如果不想每次修改程式就重新go run的話，可以安裝Fresh這個命令列小工具，Fresh會偵測目錄內的檔案是否有修改，若有修改則會自動重建應用。 安裝1go get github.com/pilu/fresh 使用12cd /path/to/myappfresh">
+<meta name="keywords" content="golang">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Govendor使用方法">
-<meta property="og:url" content="http://boyilai.github.io/2019/01/08/Govendor使用方法/index.html">
+<meta property="og:title" content="Go網頁開發-自動重載工具">
+<meta property="og:url" content="http://boyilai.github.io/2019/01/08/Go網頁開發-自動重載工具/index.html">
 <meta property="og:site_name" content="CoffeeBean">
-<meta property="og:description" content="安裝govendor1go get -u -v github.com/kardianos/govendor 生成vendor專案完成後，可以使用下列指令生成vendor目錄，並在該目錄生成vendor.json，作用類似node.js的package.json，記錄專案所使用的套件及版本。12cd projectgovendor init 加入專案所使用的套件">
+<meta property="og:description" content="使用go進行網頁開發時，如果不想每次修改程式就重新go run的話，可以安裝Fresh這個命令列小工具，Fresh會偵測目錄內的檔案是否有修改，若有修改則會自動重建應用。 安裝1go get github.com/pilu/fresh 使用12cd /path/to/myappfresh">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2019-01-08T06:43:40.050Z">
+<meta property="og:updated_time" content="2019-01-08T08:43:03.417Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Govendor使用方法">
-<meta name="twitter:description" content="安裝govendor1go get -u -v github.com/kardianos/govendor 生成vendor專案完成後，可以使用下列指令生成vendor目錄，並在該目錄生成vendor.json，作用類似node.js的package.json，記錄專案所使用的套件及版本。12cd projectgovendor init 加入專案所使用的套件">
+<meta name="twitter:title" content="Go網頁開發-自動重載工具">
+<meta name="twitter:description" content="使用go進行網頁開發時，如果不想每次修改程式就重新go run的話，可以安裝Fresh這個命令列小工具，Fresh會偵測目錄內的檔案是否有修改，若有修改則會自動重建應用。 安裝1go get github.com/pilu/fresh 使用12cd /path/to/myappfresh">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://boyilai.github.io/2019/01/08/Govendor使用方法/">
+  <link rel="canonical" href="http://boyilai.github.io/2019/01/08/Go網頁開發-自動重載工具/">
 
 
 
 
 
-  <title>Govendor使用方法 | CoffeeBean</title>
+  <title>Go網頁開發-自動重載工具 | CoffeeBean</title>
   
 
 
@@ -314,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://boyilai.github.io/2019/01/08/Govendor使用方法/">
+    <link itemprop="mainEntityOfPage" href="http://boyilai.github.io/2019/01/08/Go網頁開發-自動重載工具/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ABei">
@@ -331,7 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Govendor使用方法</h1>
+          <h1 class="post-title" itemprop="name headline">Go網頁開發-自動重載工具</h1>
         
 
         <div class="post-meta">
@@ -343,7 +343,7 @@
               
                 <span class="post-meta-item-text">發表於</span>
               
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2019-01-08T14:26:50+08:00">
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2019-01-08T16:26:25+08:00">
                 2019-01-08
               </time>
             
@@ -384,8 +384,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/01/08/Govendor使用方法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/08/Govendor使用方法/" itemprop="commentCount"></span>
+                <a href="/2019/01/08/Go網頁開發-自動重載工具/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/08/Go網頁開發-自動重載工具/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -413,12 +413,9 @@
       
 
       
-        <h2 id="安裝govendor"><a href="#安裝govendor" class="headerlink" title="安裝govendor"></a>安裝govendor</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go get -u -v github.com/kardianos/govendor</span><br></pre></td></tr></table></figure>
-<h2 id="生成vendor"><a href="#生成vendor" class="headerlink" title="生成vendor"></a>生成vendor</h2><p>專案完成後，可以使用下列指令生成vendor目錄，並在該目錄生成vendor.json，作用類似node.js的package.json，<br>記錄專案所使用的套件及版本。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd project</span><br><span class="line">govendor init</span><br></pre></td></tr></table></figure></p>
-<h2 id="加入專案所使用的套件"><a href="#加入專案所使用的套件" class="headerlink" title="加入專案所使用的套件"></a>加入專案所使用的套件</h2><p>將專案所使用的套件及版本資訊加入vendor.json之中，<br>並將所使用到的套件下載一份至vendor目錄中。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">govendor add +e</span><br></pre></td></tr></table></figure></p>
-<p>在.gitignore中加入以下內容，為了避免將vendor目錄中的套件上傳至git儲存庫佔空間。<br><figure class="highlight plain"><figcaption><span>.gitignore</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/vendor/*</span><br><span class="line">!/vendor/vendor.json</span><br></pre></td></tr></table></figure></p>
-<h2 id="拉取依賴套件到vendor"><a href="#拉取依賴套件到vendor" class="headerlink" title="拉取依賴套件到vendor"></a>拉取依賴套件到vendor</h2><p>其他人從git下載專案後，便可以利用vendor.json重新安裝專案所需套件到vendor。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">govendor sync</span><br></pre></td></tr></table></figure></p>
-
+        <p>使用go進行網頁開發時，如果不想每次修改程式就重新<code>go run</code>的話，<br>可以安裝Fresh這個命令列小工具，Fresh會偵測目錄內的檔案是否有修改，<br>若有修改則會自動重建應用。</p>
+<h2 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go get github.com/pilu/fresh</span><br></pre></td></tr></table></figure>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /path/to/myapp</span><br><span class="line">fresh</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -435,7 +432,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/go/" rel="tag"><i class="fa fa-tag"></i> go</a>
+            <a href="/tags/golang/" rel="tag"><i class="fa fa-tag"></i> golang</a>
           
         </div>
       
@@ -448,8 +445,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/27/python-字串/" rel="next" title="python-字串">
-                <i class="fa fa-chevron-left"></i> python-字串
+              <a href="/2019/01/08/Govendor使用方法/" rel="next" title="Govendor使用方法">
+                <i class="fa fa-chevron-left"></i> Govendor使用方法
               </a>
             
           </div>
@@ -457,10 +454,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/08/Go網頁開發-自動重載工具/" rel="prev" title="Go網頁開發-自動重載工具">
-                Go網頁開發-自動重載工具 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -614,7 +607,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝govendor"><span class="nav-number">1.</span> <span class="nav-text">安裝govendor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成vendor"><span class="nav-number">2.</span> <span class="nav-text">生成vendor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加入專案所使用的套件"><span class="nav-number">3.</span> <span class="nav-text">加入專案所使用的套件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拉取依賴套件到vendor"><span class="nav-number">4.</span> <span class="nav-text">拉取依賴套件到vendor</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝"><span class="nav-number">1.</span> <span class="nav-text">安裝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">2.</span> <span class="nav-text">使用</span></a></li></ol></div>
             
 
           </div>
@@ -778,9 +771,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://boyilai.github.io/2019/01/08/Govendor使用方法/';
-          this.page.identifier = '2019/01/08/Govendor使用方法/';
-          this.page.title = 'Govendor使用方法';
+          this.page.url = 'http://boyilai.github.io/2019/01/08/Go網頁開發-自動重載工具/';
+          this.page.identifier = '2019/01/08/Go網頁開發-自動重載工具/';
+          this.page.title = 'Go網頁開發-自動重載工具';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://blog-ctjti8yaob.disqus.com/embed.js';

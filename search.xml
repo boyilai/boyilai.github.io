@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Go網頁開發-自動重載工具]]></title>
+    <url>%2F2019%2F01%2F08%2FGo%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC-%E8%87%AA%E5%8B%95%E9%87%8D%E8%BC%89%E5%B7%A5%E5%85%B7%2F</url>
+    <content type="text"><![CDATA[使用go進行網頁開發時，如果不想每次修改程式就重新go run的話，可以安裝Fresh這個命令列小工具，Fresh會偵測目錄內的檔案是否有修改，若有修改則會自動重建應用。 安裝1go get github.com/pilu/fresh 使用12cd /path/to/myappfresh]]></content>
+      <categories>
+        <category>程式</category>
+      </categories>
+      <tags>
+        <tag>golang</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Govendor使用方法]]></title>
     <url>%2F2019%2F01%2F08%2FGovendor%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[安裝govendor1go get -u -v github.com/kardianos/govendor 生成vendor專案完成後，可以使用下列指令生成vendor目錄，並在該目錄生成vendor.json，作用類似node.js的package.json，記錄專案所使用的套件及版本。12cd projectgovendor init 加入專案所使用的套件將專案所使用的套件及版本資訊加入vendor.json之中，並將所使用到的套件下載一份至vendor目錄中。1govendor add +e 在.gitignore中加入以下內容，為了避免將vendor目錄中的套件上傳至git儲存庫佔空間。.gitignore12/vendor/*!/vendor/vendor.json 拉取依賴套件到vendor其他人從git下載專案後，便可以利用vendor.json重新安裝專案所需套件到vendor。1govendor sync]]></content>
